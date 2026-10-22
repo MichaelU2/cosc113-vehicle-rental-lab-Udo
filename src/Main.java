@@ -13,5 +13,14 @@ public class Main {
         // Try an invalid door count
         c.setDoors(3);
         System.out.println("Doors: " + c.getDoors());
+
+
+        // Create  a ElectricCar
+        ElectricCar e = new ElectricCar("Tesla", 2024, 4, 80);
+        e.describe();
+        e.accelerate(30);
+        e.accelerate(20);
+        System.out.println("Speed: " + e.getSpeed());
+        System.out.println("Battery: " + e.getBatteryLevel() + "%");
     }
 }
